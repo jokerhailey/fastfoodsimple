@@ -1,0 +1,300 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigetion Bar: Logo and Image */
+#logo{
+    margin: -1px 39px;
+}
+
+#logo img{
+    margin: 4px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Langar', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;        
+} 
+
+#navbar ul li a{
+    color: red;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/pexels-kelsey-johnson-2331575.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.89; */
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Langar', cursive;
+}
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border:3px solid brown;
+    padding: 34px;
+    margin:25px 6px;
+    border-radius: 23px;
+    background: rgb(155, 184, 196)
+}
+
+#services .box img {
+    height: 150px;
+    width:100px;
+    margin: auto;
+    display: block;
+}
+
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-primary-center{
+    font-size: 2.8rem;
+    padding: 12px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+
+.c-primary-center{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+
+.h-secondary-center{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+
+.btn{
+    padding: 6px 30px;
+    border: 3px solid red;
+    background-color: tomato;
+    margin: 27px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color:yellow;
+}
+
+.center-text{
+    /* align-items: center; */
+    text-align:center;
+    font-family: 'Langar', cursive;
+
+}
+
+/*Client section*/
+#client-section{
+    height: 200px;
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url(../img/pexels-sam-kolder-2387873.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 67%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 188px;
+}
+
+.clients-item{
+    padding:34px;
+}
+
+.f-primary-center{
+    margin-top: 283px;
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+
+/* Contact Section*/
+#contact{
+    position:relative;
+
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: rgb(219, 107, 107);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box form {
+    font-size: 1.3rem;
+    font-family: 'Langar', cursive;
+}
+
+#first{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: white
+}
+
+#free{
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    color: tomato;
+    /* transition: ; */
+}
+
+#order{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
